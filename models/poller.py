@@ -29,8 +29,8 @@ class AppAuthHandler(tweepy.auth.AuthHandler):
 
 
 class Poller(object):
-    consumer_key = "xPFnQOF4L2Kn925fYSyZimjoe"
-    consumer_secret = "RXj6M4hY8CUpFr3F2nZe1byu63oVFTy4pgm6AHNRpXmCRXmcR1"
+    consumer_key = "09pspqzVapc2EMgkqjM32XK0L"
+    consumer_secret = "JNEg62FJBt53MfLaIHniypVBH82XPkcyWSYB2cRNAjlJPux3Po"
     search_keywords = ['eurusd']
     page_size = 15  # 15 tweets per page. should be configurable up to 100, but it's not working, apparently the new
     # parameter is count and no longer rpp TODO check if it works with tweepy
