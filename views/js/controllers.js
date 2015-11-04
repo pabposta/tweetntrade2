@@ -53,7 +53,7 @@ function ScoresCtrl($scope, $http) {
 
     function hourlyVolumeWeightedAverage() {
         // split scores into groups of two
-        var size = 2,
+        var size = 1,
             scoreGroups = [],
             avgScores = [],
             labels = [];
