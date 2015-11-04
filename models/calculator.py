@@ -18,15 +18,11 @@ class Calculator(object):
         if words.intersection(self.close_words):
             closed = True
         if words.intersection(self.buy_words):
-            if closed:
-                self.sells += 1
-            else:
+            if not closed:
                 self.buys += 1
             buy_or_sell = True
         if words.intersection(self.sell_words):
-            if closed:
-                self.buys += 1
-            else:
+            if not closed:
                 self.sells += 1
             buy_or_sell = True
         if buy_or_sell:
